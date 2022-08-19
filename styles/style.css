@@ -18,9 +18,6 @@
     margin-right: 100px;
   }
 
-svg{
-    width: 5%;
-}
     
   /* Links inside the navbar */
   .navLinks a {
@@ -85,4 +82,5 @@ svg{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
   
