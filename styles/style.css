@@ -15,10 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 100px;
   }
 
-
-  
+svg{
+    width: 5%;
+}
+    
   /* Links inside the navbar */
   .navLinks a {
     float: left;
