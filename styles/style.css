@@ -175,11 +175,14 @@
   margin: 60px;
   width: 80%;
   display: flex;
+  
 }
 
 .left{
+  display: flex;
+  flex-direction: column;
   float: left;
-  margin: 30px;
+  margin: 0 30px;
   border: 1px gray solid;
   border-radius: 5px;
   padding: 30px;
@@ -187,4 +190,24 @@
 
 .left img{
   size: 40px;
+}
+
+.product-text{
+  margin: 0 90px;
+  margin-left: 350px;
+  padding: 30px;
+}
+
+.product-text h1{
+    /* width: 30%; */
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.product-text h4{
+  margin-bottom: 20px;
+}
+
+.product-text h4 span{
+  font-weight: bold;
 }
