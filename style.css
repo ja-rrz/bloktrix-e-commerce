@@ -164,8 +164,6 @@
 
 .product-container{
     width: 20%;
-    border: .5px rgb(194, 192, 192) solid;
-    border-radius: 30px;
     margin: 20px;
     display: flex;
     justify-content: center;
