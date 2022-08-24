@@ -29,7 +29,11 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: .3s ease-in-out;
+    background: 
+    linear-gradient(currentColor 0 0) 
+    bottom /var(--d, 0) 3px 
+    no-repeat;
+transition:0.5s;
   }
   
   /* The dropdown container */
@@ -51,13 +55,10 @@
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    color: rgb(6, 2, 231);
+  .navbar a:hover, .dropdown:hover .dropbtn{
+    --d: 100%;  
   }
-  
-  /* Dropdown content (hidden by default) */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -67,7 +68,6 @@
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
     color: black;
@@ -76,13 +76,7 @@
     display: block;
     text-align: left;
   }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -94,7 +88,7 @@
 }
 
 .hero-text{
-    margin: 100px 70px;
+    margin: 100px 60px;
 }
 
 .hero-text h1{
@@ -145,7 +139,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px;
+  margin-bottom: 1px;
 }
 
 .hot-deals-cta{
@@ -170,8 +165,12 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    transition: .5s ease-in-out;
 }
 
+.product-container:hover{
+  transform: translateY(-17px);
+}
 
 .product-container img{
     width: 90%;
@@ -283,4 +282,66 @@ ion-icon{
   font-size: 20px;
   margin-left: 20px;
 
+}
+
+.icon{
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.about-section{
+  color: #00060e;
+  font-weight: 300;
+  padding: 30px 0;
+  width: 50%;
+  line-height: 35px;
+  letter-spacing: 1px;
+  margin: 50px;
+  height: 30vh;
+}
+
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: white;
+color: rgb(77, 75, 75);
+font-weight: 300;
+width: 100%;
+text-align: center;
+line-height: 35px;
+letter-spacing: 1px;
+height: 30vh;
+}
+
+.footer-link{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+  transition: .2s ease-in-out;
+}
+
+.footer-link:hover{
+  color: black;
+}
+
+.social{
+  margin-top: 20px;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+}
+
+.social ion-icon{
+  margin: 10px;
 }
