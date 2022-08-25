@@ -38,7 +38,7 @@
                 <a href="#">Audio</a>
               </div>
             </div>
-            <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="cart-outline"></ion-icon><p id="cart-item">(0)</p></a>
             </div>
         <!-- </div> -->
       
@@ -67,12 +67,13 @@
     
     <script>
        let atcBtn = document.getElementById("atc-btn")
+       let cartItems = document.getElementById("cart-item")
        function changeContent(){
         atcBtn.textContent = "Added to Cart"
         atcBtn.style.color = "black"
         atcBtn.style.backgroundColor = "rgb(156, 191, 221)"
         atcBtn.style.border = "1px black solid"
-
+        cartItems.textContent = "(1)"
        }
     </script>
     <script src="https://unpkg.com/kursor"></script>
