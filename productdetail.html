@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - Dell XPS 15</title>
+</head>
+<style>
+    body{
+        background-color: rgb(156, 191, 221);
+    }
+
+    
+</style>
+<body>
+    <nav class="navbar">
+        <!-- <div class="logo-container"> -->
+            <img src="logo.png" alt="" class="logo-img">
+            <div class="navLinks">            
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Laptops</a>
+                <a href="#">Desktops</a>
+                <a href="#">Smartphones</a>
+                <a href="#">Watches</a>
+                <a href="#">Drives</a>
+                <a href="#">Softwares</a>
+                <a href="#">Audio</a>
+              </div>
+            </div>
+            <a href="#"><ion-icon name="cart-outline"></ion-icon><p id="cart-item">(0)</p></a>
+            </div>
+        <!-- </div> -->
+      
+    </nav>
+
+    <section class="main">
+        <div class="left">
+        <div class="product-img">
+            <img src="./dell xps 15 9500.png" alt="DELL XPS 15">
+        </div>
+    </div>
+        <div class="product-text">
+            <h1>Dell Xps 15 9510 -Core i9-11900h -1TB SSD -32GB -4GB Nvidia-15.6" -3.5k -Win 10 -Touchscreen</h1>
+            <h4>Brand: <span>Dell</span></h4>
+            <div class="usage2"><p>Developer</p></div>
+            <div class="price2"><p>$1,299.00</p></div>
+            <div class="add-to-cart-cta">
+                <button class="atc-btn" id="atc-btn" onclick="changeContent()">
+                    Add To Cart
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <script>
+       let atcBtn = document.getElementById("atc-btn")
+       let cartItems = document.getElementById("cart-item")
+       function changeContent(){
+        atcBtn.textContent = "Added to Cart"
+        atcBtn.style.color = "black"
+        atcBtn.style.backgroundColor = "rgb(156, 191, 221)"
+        atcBtn.style.border = "1px black solid"
+        cartItems.textContent = "(1)"
+       }
+    </script>
+    <script src="https://unpkg.com/kursor"></script>
+        <script>
+            new kursor({
+                type: 1,
+                removeDefaultCursor: true,
+                color: 'blue'
+            })
+            
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
